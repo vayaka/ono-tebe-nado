@@ -1,4 +1,7 @@
 /* место для вашего кода */
+
+/* Блок хеадер(шапка) */
+
 .header {
   display: grid;
   grid-template-columns: 1.55fr 1fr 1fr;
@@ -10,6 +13,8 @@
   font-weight: 400;
 }
 
+/* Блок лого в шапке */
+
 .header__logo {
   display: block;
   grid-area: logo;
@@ -17,6 +22,10 @@
   width: 136px;
   height: 104px;
 }
+
+/* Конец блока лого в шапке */
+
+/* Блок навигации в шапке */
 
 .header__links-list {
   display: flex;
@@ -46,13 +55,18 @@
 .header__links-list-item_no-bullet {
   list-style-type: none;
 }
+/* Конец блока навигации в шапке */
+
+/* Конец блока шапка*/
+
+/* Блок контактов */
 
 .contacts {
   display: flex;
   flex-direction: column;
   grid-area: contacts;
-  margin: 5px 0 0 20px;
-  row-gap: 4px;
+  margin: 1px 0 0 20px;
+  row-gap: 5px;
 }
 
 .phone,
@@ -68,3 +82,5 @@
   font-style: normal;
   letter-spacing: 0.1px;
 }
+
+/* Конец блока */
