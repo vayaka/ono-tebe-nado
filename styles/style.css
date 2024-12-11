@@ -1,1 +1,67 @@
 /* место для вашего кода */
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+.header {
+  font-size: 18px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 92px;
+  grid-template-columns: 1.55fr 1fr 1fr;
+  grid-template-areas:
+  "menu logo contacts";
+}
+
+.header__logo {
+  grid-area: logo;
+  display: block;
+  width: 145px;
+  height: 105px;
+}
+
+.header__links-list {
+  grid-area: menu;
+  display: flex;
+  list-style: circle;
+  justify-content: space-evenly;
+}
+
+.header__link{
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+}
+
+.header__link_active {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.header__links-list-item_no-bullet {
+  list-style-type: none;
+}
+
+.contacts {
+  grid-area: contacts;
+  margin: 5px 0 0 20px;
+}
+
+.phone {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+}
+
+.email {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+}
