@@ -1,38 +1,39 @@
 /* место для вашего кода */
-
-body {
-  font-family: Raleway, sans-serif;
-}
-
 .header {
   display: grid;
   grid-template-columns: 1.55fr 1fr 1fr;
   grid-template-areas: "menu logo contacts";
-  justify-content: center;
   align-items: center;
   margin-top: 92px;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .header__logo {
   display: block;
   grid-area: logo;
-  width: 145px;
-  height: 105px;
+  margin-left: 2px;
+  width: 136px;
+  height: 104px;
 }
 
 .header__links-list {
   display: flex;
   grid-area: menu;
-  justify-content: space-evenly;
+  margin-top: 4px;
+  margin-left: 52px;
+  gap: 32.5px;
+  /* justify-content: space-evenly; */
   list-style: circle;
 }
 
 .header__link {
-  display: inline-block;
-  border-bottom: 1px solid black;
-  padding-bottom: 1px;
-  text-decoration: none;
+  display: inline;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  letter-spacing: 0.1px;
 }
 
 .header__link_active {
@@ -47,20 +48,23 @@ body {
 }
 
 .contacts {
+  display: flex;
+  flex-direction: column;
   grid-area: contacts;
   margin: 5px 0 0 20px;
+  row-gap: 4px;
 }
 
-.phone {
-  display: inline-block;
-  border-bottom: 1px solid black;
-  padding-bottom: 1px;
-  text-decoration: none;
-}
-
+.phone,
 .email {
-  display: inline-block;
-  border-bottom: 1px solid black;
-  padding-bottom: 1px;
-  text-decoration: none;
+  display: inline;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  letter-spacing: 0.1px;
+}
+
+.address {
+  font-style: normal;
+  letter-spacing: 0.1px;
 }
